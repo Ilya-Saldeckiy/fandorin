@@ -11,105 +11,59 @@ h1{
 }
 
 /*start colors*/
+$main-color: #242424;
 $Black: #242424;
-.Black {
-  color: $Black;
-}
 $White: #FFFFFF;
-.White {
-  color: $White;
-}
-
 $primary: #A65CF0;
-.Primary {
-  color: $primary;
-}
-
 $primary_light: #C998FB;
-.primary_light{
-  color: $primary_light;
-}
-
 $primary_shade: #7033AC;
-.primary_shade{
-  color: $primary_shade;
-}
-
 $pink_light: #F8EFFF;
-.pink_light{
-  color: $pink_light;
-}
-
 $pink_violet: #EBD1FF;
-.pink_violet{
-  color: $pink_violet;
-}
-
 $secondary: #FF862F;
-.secondary{
-  color: $secondary;
-}
-
 $secondary_light: #FFBD59;
-.secondary_light{
-  color: $secondary_light;
-}
-
 $secondary_shade: #BB370E;
-.secondary_shade{
-  color: $secondary_shade;
-}
-
 $red_input: #FF6972;
-.red_input{
-  color: $red_input;
-}
-
 $green_input: #B8EC64;
-.green_input{
-  color: $green_input;
-}
-
 $gold: #D5B986;
-.gold{
-  color: $gold;
-}
-
 $grey_light: #F7F7F7;
-.grey_light{
-  color: $grey_light;
-}
-
 $md_grey: #EAEAEA;
-.md_grey{
-  color: $md_grey;
-}
-
 $grey: #999999;
-.grey{
-  color: $grey;
-}
-
 $grey_shade: #666666;
-.grey_shade{
-  color: $grey_shade;
-}
-
 $lime_color: #DAFFD1;
-.lime_color{
-  color: $lime_color;
-}
-
 $bone: #FFF5D1;
-.bone{
-  color: $bone;
-}
 
 
 
 /*end colors*/
 
 /*start font-size*/
+
+/* Mixin flex */
+
+@mixin flex-vertical {
+  display: flex;
+  align-items: center;
+}
+
+/* Mixin weight */
+
+@mixin font {
+  font-weight: 400;
+}
+
+@mixin font-m {
+  font-weight: 500;
+}
+
+@mixin font-sb {
+  font-weight: 600;
+}
+
+@mixin font-b {
+  font-weight: 700;
+}
+
+/* Mixin fonts */
 
 @mixin f_60_b {
   font-size: 60px;
@@ -341,6 +295,12 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 ul li {
   list-style-type: none;
 }
@@ -366,6 +326,16 @@ button, label {
   cursor: pointer;
 }
 /*container*/
+@media (min-width: 1230px) {
+  .container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 @media (max-width: 1309.5px) { 
   .container {
     max-width: 100%;
@@ -374,25 +344,18 @@ button, label {
     margin-right: auto;
   }
 }
+
 @media (max-width: 1199.5px) { 
   .container {
     padding-right: 36px;
     padding-left: 36px;
   }
 }
+
 @media (max-width: 1023.5px) { 
   .container {
     padding-right: 36px;
     padding-left: 36px;
-  }
-}
-@media (min-width: 1310px) { 
-  .container {
-    max-width: 1280px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
   }
 }
 /*placeholder*/
