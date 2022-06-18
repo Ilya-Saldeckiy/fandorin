@@ -1,4 +1,8 @@
 
+body {
+  background-color: $bg-color;
+}
+
 h1{
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
