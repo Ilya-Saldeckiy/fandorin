@@ -4,14 +4,13 @@
   margin-top: 70px;
 
   &__up{
-
     background-color: $md_grey;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     &-position{
       display: flex;
-      align-items: center;
+      align-items: flex-start;
 
       &__links{
         display: flex;
@@ -22,13 +21,14 @@
     }
 
     &-logo {
-
-      margin-bottom: 31px;
+      max-width: 180px;
       display: block;
-      height: 27px;
 
       &__block {
-        margin-right: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         @media (max-width: 1309px) {
           margin-right: 32px;
@@ -97,15 +97,15 @@
         padding-left: 0;
         margin-bottom: 0;
         display: flex;
-        flex-direction: column;
+        column-gap: 10px;
         row-gap: 10px;
 
         & li{
           line-height: 14px;
 
           & a{
-            @include f_14;
-            line-height: 14px;
+            @include f_18;
+            line-height: 16px;
             color: $grey;
           }
 

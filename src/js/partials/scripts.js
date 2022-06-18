@@ -1,5 +1,24 @@
 $(document).ready(function(){
 
+    // $('[data-fancybox]').fancybox({
+    //     infinite: false,
+    //     video: {
+    //         tpl:
+    //             '<video src="{{src}}" class="fancybox-video" playsinline loop="loop" preload="metadata" muted=""></video>',
+    //         format: "",
+    //         autoStart: true
+    //     },
+    //     afterShow: function (instance, current) {
+    //         $('.single-main-slider_basic').slick('slickGoTo', instance['currIndex']);
+    //         $('.shop-item').slick('slickGoTo',instance['currIndex']);
+    //     },
+    // });
+    //
+    // $().fancybox({
+    //     selector : '.slick-slide:not(.slick-cloned)',
+    //     hash     : false
+    // });
+
     // Начало выпадающего окна города
 
     cityDropdown = $('.header__up-city__dropdown');
@@ -24,43 +43,6 @@ $(document).ready(function(){
 
 
     // Конец выпадающего окна города
-
-    // Начало выпадающего фильтра
-
-    filterDropdown = $('.header__down-search__filter-dropdown');
-
-    filterDropdown.hide();
-
-    $('.header__down-search__filter').click(function () {
-
-        $(this).toggleClass('header__down-search__filter-active');
-        filterDropdown.slideToggle(250);
-        return false;
-
-    });
-
-    $(document).mouseup(function (e) {
-        var container = $(".header__down-search__filter-position");
-        if (container.has(e.target).length === 0){
-            filterDropdown.hide(250);
-            $('.header__down-search__filter').removeClass('header__down-search__filter-active');
-        }
-    });
-
-
-    // Конец выпадающего фильтра
-
-
-    // НАЧАЛО Раскрытие товара в рейтинге
-
-    $('.rating__list-item:nth-child(n+9)').hide();
-
-    $('.rating__btn').on('click', function () {
-        $('.rating__list-item:nth-child(n+9)').show(300);
-        $(this).hide();
-    })
-
-    // КОНЕЦ Раскрытие товара в рейтинге
 
     // НАЧАЛО Большой баннер на главной
 

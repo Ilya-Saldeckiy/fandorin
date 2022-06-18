@@ -249,3 +249,170 @@
 
   }
 }
+
+.about {
+  padding: 100px 0 100px;
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: $title-color;
+    margin-bottom: 35px;
+  }
+}
+
+.about__grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__content {
+
+  .text {
+    max-width: 70%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .btn {
+    max-width: 350px;
+    height: 70px;
+    font-size: 16px;
+    color: $button-color;
+    background-color: $button-bg;
+    border-radius: $radius;
+    transition: all .2s ease-in-out;
+  }
+}
+
+.section__gallery {
+  background-color: $bg-color;
+  padding: 100px 0 100px;
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: $title-color;
+    margin-bottom: 35px;
+  }
+}
+
+.gallery__grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.gallery__item {
+  border-radius: 6px;
+  max-width: 23.4%;
+  width: 100%;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.contacts {
+  padding: 100px 0 210px;
+  position: relative;
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: $title-color;
+    margin-bottom: 35px;
+  }
+}
+
+.contacts__grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacts__socials {
+
+  a {
+    display: block;
+  }
+}
+
+#map {
+  width: 55%;
+  height: 500px;
+  position: absolute;
+  right: 0;
+}
+
+.section__reviews {
+  padding: 100px 0 100px;
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    color: $title-color;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.interior {
+  padding: 100px 0 100px;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &.reversed {
+      flex-direction: row-reverse;
+
+      .interior__item-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    &-content {
+      max-width: 44%;
+      width: 44%;
+    }
+
+    &-image {
+      width: 55%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      .image {
+        max-width: 48.8%;
+        width: 100%;
+        border-radius: $radius;
+      }
+    }
+  }
+}

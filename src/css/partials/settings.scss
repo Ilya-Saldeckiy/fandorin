@@ -10,6 +10,14 @@ h1{
   overflow: hidden;
 }
 
+.title {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 35px;
+}
+
 /*start colors*/
 $main-color: #242424;
 $Black: #242424;
@@ -31,6 +39,12 @@ $grey: #999999;
 $grey_shade: #666666;
 $lime_color: #DAFFD1;
 $bone: #FFF5D1;
+
+$radius: 10px;
+$title-color: #000;
+$button-bg: #fff;
+$button-color: #000;
+$bg-color: #fff;
 
 
 
