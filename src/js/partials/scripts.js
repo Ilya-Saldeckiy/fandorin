@@ -53,7 +53,7 @@ $(document).ready(function(){
         vertical: false,
         infinite: true,
         dots:true,
-        autoplay:true,
+        autoplay:false,
         // responsive: [
         //     {
         //         breakpoint: 1200,

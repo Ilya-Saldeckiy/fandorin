@@ -5,3 +5,4 @@
 //= partials/api-map.js
 //= partials/scripts.js
 //= partials/map.js
+//= partials/animate.js

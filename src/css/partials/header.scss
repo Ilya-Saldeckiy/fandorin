@@ -21,6 +21,11 @@
       @include font-sb;
       font-size: 16px;
       color: $main_color;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        color: $primary;
+      }
     }
 
     &:not(:last-child) {

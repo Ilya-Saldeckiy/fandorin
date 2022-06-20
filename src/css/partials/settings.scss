@@ -1,4 +1,7 @@
 
+.banner__slider-item {
+  background-size: cover;
+}
 
 h1{
   position: absolute !important;
@@ -45,7 +48,7 @@ $radius: 10px;
 $title-color: #000;
 $button-bg: #fff;
 $button-color: #000;
-$bg-color: #F5F5DC;
+$bg-color: #EAEAEA;
 
 
 
@@ -83,117 +86,117 @@ $bg-color: #F5F5DC;
 @mixin f_60_b {
   font-size: 60px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_60 {
   font-size: 60px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_34_b {
   font-size: 34px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_34 {
   font-size: 34px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_32_b {
   font-size: 32px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_32 {
   font-size: 32px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_28_b {
   font-size: 28px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_28 {
   font-size: 28px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_24_b {
   font-size: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_24 {
   font-size: 24px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_20_b {
   font-size: 20px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_20 {
   font-size: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_18_b {
   font-size: 18px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_18 {
   font-size: 18px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_16_b {
   font-size: 16px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_16 {
   font-size: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_13_b {
   font-size: 13px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_13 {
   font-size: 13px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_14_b {
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_14 {
   font-size: 14px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_12_b {
   font-size: 12px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_12 {
   font-size: 12px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 @mixin f_10 {
   font-size: 10px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 /*end font-size*/
 
@@ -202,7 +205,7 @@ $bg-color: #F5F5DC;
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 26px;
-  font-family: Open Sans;
+  font-family: Pobeda;
 }
 
 /*start btn*/
@@ -320,8 +323,12 @@ ul li {
   list-style-type: none;
 }
 
+ol {
+  padding-left: 20px;
+}
+
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pobeda', sans-serif;
 }
 
 a{
