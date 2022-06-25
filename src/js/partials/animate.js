@@ -3,7 +3,7 @@ $(document).ready(function(){
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, 800);
     });
     $(".sign-in-btn").click(function() {
         $('html, body').animate({
@@ -13,6 +13,6 @@ $(document).ready(function(){
     $(".first-slide-btn").click(function() {
         $('html, body').animate({
             scrollTop: $("#footer").offset().top
-        }, 1500);
+        }, 800);
     });
 });
