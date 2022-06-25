@@ -49,12 +49,15 @@
       display: block;
       background-color: transparent;
       padding: 0;
-      width: auto;
       color: $primary;
-      border: none;
       line-height: 16px;
       font-weight: 600;
       margin: 0 auto;
+      border: 1px solid #00aeef;
+      border-radius: 10px;
+      width: 160px;
+      height: 40px;
+      margin-top: 10px;
     }
   }
 }
