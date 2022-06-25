@@ -1,6 +1,7 @@
 //= partials/jquery-3.2.1.min.js
 //= partials/bootstrap.min.js
 //= partials/jquery-ui.min.js
+//= partials/inputmask.min.js
 //= partials/slick.min.js
 //= partials/api-map.js
 //= partials/scripts.js
@@ -8,3 +9,4 @@
 //= partials/animate.js
 //= partials/burger.js
 //= partials/mail.js
+//= partials/mask.js
