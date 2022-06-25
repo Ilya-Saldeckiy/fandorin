@@ -26,8 +26,8 @@ h1{
 $main-color: #242424;
 $Black: #242424;
 $White: #FFFFFF;
-$primary: #A65CF0;
-$primary_light: #C998FB;
+$primary: rgba(0, 174, 239, 1);
+$primary_light: rgba(0, 174, 239, 0.7);
 $primary_shade: #7033AC;
 $pink_light: #F8EFFF;
 $pink_violet: #EBD1FF;
@@ -234,14 +234,14 @@ $bg-color: #EAEAEA;
 }
 .btn-default:focus {
   background-color: $primary_light;
-  color: $White;
-  border-color: $primary_shade;
+  color: red;
+  border-color: $primary_light;
   border-width: 2px;
 }
 .btn-default:active {
-  background-color: $primary_shade;
-  color: $White;
-  border-color: $primary_shade;
+  background-color: $primary;
+  color: red;
+  border-color: $primary;
 }
 
 .btn-default:disabled {
@@ -369,15 +369,15 @@ button, label {
 
 @media (max-width: 1199.5px) { 
   .container {
-    padding-right: 36px;
-    padding-left: 36px;
+    padding-right: 21px;
+    padding-left: 21px;
   }
 }
 
 @media (max-width: 1023.5px) { 
   .container {
-    padding-right: 36px;
-    padding-left: 36px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
 /*placeholder*/

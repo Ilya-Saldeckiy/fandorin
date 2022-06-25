@@ -6,3 +6,5 @@
 //= partials/scripts.js
 //= partials/map.js
 //= partials/animate.js
+//= partials/burger.js
+//= partials/mail.js

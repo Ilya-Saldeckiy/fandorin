@@ -5,19 +5,19 @@
         <div class="banner__slider">
             <div class="banner__slider-item" style="background-image: url('img/banner/photo-1.png')">
                 <div class="slider__content">
-                    <h2 class="banner__slider-item__caption">Скидка 15% на первую покупку</h2>
+                    <h2 class="banner__slider-item__caption">Скидка 15% при первом заказе!</h2>
                     <button class="btn btn-default banner__slider-item__btn">Получить!</button>
                 </div>
             </div>
             <div class="banner__slider-item" style="background-image: url('img/banner/photo-2.png')">
                 <div class="slider__content">
-                    <h2 class="banner__slider-item__caption">1000+ аксессуаров для дома</h2>
+                    <h2 class="banner__slider-item__caption">Яркие краски для вашего праздника!</h2>
                     <button class="btn btn-default banner__slider-item__btn">Подробнее</button>
                 </div>
             </div>
             <div class="banner__slider-item" style="background-image: url('img/banner/photo-3.png')">
                 <div class="slider__content">
-                    <h2 class="banner__slider-item__caption banner__slider-item__caption-white">Коллекция стильного и яркого текстиля</h2>
+                    <h2 class="banner__slider-item__caption banner__slider-item__caption-white">Место, оставляющее яркие воспоминания </h2>
                     <button class="btn btn-default banner__slider-item__btn">Подробнее</button>
                 </div>
             </div>
@@ -39,11 +39,12 @@
                     <li>Основной зал вместимостью более 100&nbsp;человек;</li>
                     <li>Мини-зал  вместимостью более 30&nbsp;человек.</li>
                 </ol>
+                <p class="subtitle"><b>Большой просторный зал</b></p>
                 <ul class="list">
-                    <li>Большой просторный зал.</li>
+                    <li>Большие просторные залы.</li>
                     <li>Комфортная уютная атмосфера, открытая планировка, стильный интерьер.</li>
                     <li>Прекрасные повара, которые помогут подобрать меню для вашего банкета с&nbsp;учётом кулинарных предпочтений гостей.</li>
-                    <li>Помещения различной вместимости - 2&nbsp;зала на&nbsp;различное количество мест</li>
+                    <li>Индивидуальный подход к каждому</li>
                     <li>Большое уличное пространство.</li>
                     <li>Площадка под парковочные места;</li>
                 </ul>
@@ -83,7 +84,7 @@
                 <p class="text">
                     Будем рады предложить высокое качество обслуживания, внимание к&nbsp;деталям, чистоту и&nbsp;вкусные блюда к&nbsp;Вашему праздничному столу!
                 </p>
-                <button class="btn">
+                <button class="btn btn-default">
                     Позвонить
                 </button>
             </div>
@@ -110,7 +111,7 @@
     <div class="container">
         <h2 class="title">Отзывы</h2>
         <p class="text">Будем рады если вы оставите отзыв!</p>
-        <button class="btn">Оставить отзыв</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#reviewsModal">Оставить отзыв</button>
     </div>
 </section>
 <section class="contacts" id="contacts">
@@ -131,11 +132,6 @@
                 <p class="address">
                     Тамбовская область, г.&nbsp;Жердевка, ул.&nbsp;Дорожная, 14.
                 </p>
-<!--                <div class="contacts__socials">-->
-<!--                    <a class="vk" href="#">vk</a>-->
-<!--                    <a class="whatsapp" href="#">whatsapp</a>-->
-<!--                    <a class="telegram" href="#">telegram</a>-->
-<!--                </div>-->
             </div>
             <div class="map-position">
                 <div id="map"></div>
@@ -143,5 +139,29 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade modal-reviews" id="reviewsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Оставьте отзыв</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="js/mail.php" enctype="multipart/form-data" class="form" method="POST" id="form">
+                    <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
+                    <input type="hidden" name="form_subject" value="Тема письма">
+                    <h3 class="form-contacts-legend">Заказать обратный звонок</h3>
+                    <input class="contacts-input" type="text" placeholder="Имя*" name="fio" required>
+                    <textarea class="modal-reviews" name="reviews" required></textarea>
+                    <div id="form_result"></div>
+                    <button class="btn contact-form-btn" type="submit" name="submit" id="submit">Заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 //= template/footer.html
