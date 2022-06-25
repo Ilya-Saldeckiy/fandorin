@@ -150,11 +150,31 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="send.php" class="form" method="POST" id="form2">
-                    <input class="contacts-input" type="text" placeholder="Имя*" name="fio" required>
-                    <input class="contacts-input" type="tel" placeholder="Телефон*" name="tel" required>
-                    <button class="btn btn-default" type="submit" name="submit" id="submit2">Заказать</button>
-                </form>
+                <?php
+                    //проверяем, существуют ли переменные в массиве POST
+                    if(!isset($_POST['fio']) and !isset($_POST['email'])){
+                     ?> <form action="send.php" method="post">
+                                    <input type="text" name="fio" placeholder="Укажите ФИО" required>
+                                    <input type="text" name="email" placeholder="Укажите e-mail" required>
+                                    <input type="submit" value="Отправить">
+                                </form> <?php
+                    } else {
+                     //показываем форму
+                     $fio = $_POST['fio'];
+                     $email = $_POST['email'];
+                     $fio = htmlspecialchars($fio);
+                     $email = htmlspecialchars($email);
+                     $fio = urldecode($fio);
+                     $email = urldecode($email);
+                     $fio = trim($fio);
+                     $email = trim($email);
+                     if (mail("example@mail.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: example2@mail.ru \r\n")){
+                     echo "Сообщение успешно отправлено";
+                     } else {
+                     echo "При отправке сообщения возникли ошибки";
+                     }
+                    }
+                    ?>
             </div>
         </div>
     </div>
