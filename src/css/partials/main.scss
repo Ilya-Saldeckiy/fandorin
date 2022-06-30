@@ -258,6 +258,16 @@
   height: 600px;
   border-radius: 10px;
   position: relative;
+
+  &.second {
+    transform: scale(-1,1);
+
+    .slider__content {
+      transform: scale(-1,1);
+      left: auto;
+      right: 40px;
+    }
+  }
 }
 
 .slider__content {
@@ -858,6 +868,41 @@
       font-size: 24px;
       line-height: 32px;
       margin-bottom: 15px;
+    }
+  }
+
+  .banner__slider-item {
+    height: 500px;
+    background-position: center;
+
+    &.first {
+      background-image: url("../img/banner/mobile/photo-1.png") !important;
+      background-size: cover;
+    }
+
+    &.second {
+      background-image: url("../img/banner/mobile/photo-2.png") !important;
+      background-size: cover;
+    }
+
+    &.third {
+      background-image: url("../img/banner/mobile/photo-3.png") !important;
+      background-size: cover;
+    }
+
+    &.four {
+      background-image: url("../img/banner/mobile/photo-4.png") !important;
+      background-size: cover;
+    }
+
+    &.five {
+      background-image: url("../img/banner/mobile/photo-5.png") !important;
+      background-size: cover;
+    }
+
+    &.sex {
+      background-image: url("../img/banner/mobile/photo-6.png") !important;
+      background-size: cover;
     }
   }
 
