@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Pobeda';
+  src: url('../fonts/pobeda-regular.ttf');
+  src: local('Circe'), local('Circe-Regular'),
+  url('../fonts/pobeda-regular.woff') format('woff'),
+  url('../fonts/pobeda-regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pobeda';
+  src: url('../fonts/pobeda-bold.ttf');
+  src: local('Circe-bold'), local('Circe-ExtraBold'),
+  url('../fonts/pobeda-bold.woff') format('woff'),
+  url('../fonts/pobeda-bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}

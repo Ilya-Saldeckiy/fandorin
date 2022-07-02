@@ -2,6 +2,7 @@
 
   &__section{
     margin-bottom: 70px;
+    padding-top: 150px;
   }
 
   &__slider{
@@ -316,6 +317,13 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1260px){
+
+  .banner__section {
+    padding-top: 0;
   }
 }
 
