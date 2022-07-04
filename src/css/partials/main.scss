@@ -294,6 +294,7 @@
   .btn {
     width: 100%;
     max-width: 200px;
+    font-size: 24px;
     border-radius: 10px;
     border: 1px solid transparent;
   }
@@ -316,7 +317,7 @@
   .btn {
     max-width: 200px;
     height: 60px;
-    font-size: 16px;
+    font-size: 24px;
     border-radius: $radius;
     margin-top: 30px;
     transition: all .2s ease-in-out;
@@ -430,7 +431,7 @@
   .btn {
     max-width: 200px;
     height: 60px;
-    font-size: 16px;
+    font-size: 24px;
     border-radius: $radius;
     margin-top: 30px;
     transition: all .2s ease-in-out;
@@ -955,6 +956,7 @@
     max-width: 142px;
     height: 50px;
     margin-top: 15px;
+    font-size: 24px;
   }
 
   .gallery__grid {
@@ -969,6 +971,7 @@
     max-width: 142px;
     height: 50px;
     margin-top: 15px;
+    font-size: 24px;
   }
 
   .contacts__grid {
@@ -1046,5 +1049,13 @@
         }
       }
     }
+  }
+
+  .banner__slider-item .slider__content {
+    left: 16px;
+  }
+
+  .banner__slider-item.second .slider__content {
+    right: 16px;
   }
 }
