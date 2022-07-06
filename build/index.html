@@ -212,13 +212,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="js/mail.php" enctype="multipart/form-data" class="form" method="POST" id="form2">
-                    <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
-                    <input type="hidden" name="form_subject" value="Тема письма">
-                    <input class="contacts-input" type="text" placeholder="Имя*" name="fio" required>
-                    <input class="contacts-input" type="tel" placeholder="Телефон*" name="tel" required>
-                    <div id="form_result2"></div>
-                    <button class="btn btn-default" type="submit" name="submit" id="submit2">Заказать</button>
+                <form class="form" method="post" action="/send.php">
+                    <input class="contacts-input" type="text" placeholder="Имя*" name="name" required>
+                    <input class="contacts-input" type="text" placeholder="Телефон*" name="phone" required>
+                    <button class="btn btn-default" type="submit" value="Отправить">Заказать</button>
+                    <input type="hidden" name="act" value="order">
                 </form>
             </div>
         </div>
