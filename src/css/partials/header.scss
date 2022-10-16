@@ -14,9 +14,6 @@
   @include flex-vertical;
   justify-content: space-between;
 
-  .logo {
-  }
-
   .list {
     @include flex-vertical;
 
@@ -44,11 +41,21 @@
   }
 
   .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 
     a {
       @include font-b;
       font-size: 20px;
       color: $Black;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+      }
     }
 
     .btn-default {

@@ -12,6 +12,23 @@
     <link href="css/main.css" rel="stylesheet">
 
     <title>Фандоринь</title>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(90801047, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/90801047" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <header class="header">
@@ -42,7 +59,11 @@
                     </li>
                 </ul>
                 <div class="contact">
-                    <a href="tel:+79204814883">8 (920) 481-48-83</a>
+                    <a href="tel:+79204814883">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="#fde910" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0188 21.9452C12.224 21.4011 9.66379 19.4332 7.41122 16.0955C2.62339 9.0021 5.402 4.70551 6.36611 3.55636C7.1269 2.65687 8.94591 2.59653 9.96557 2.63758C10.4005 2.6557 10.781 2.95403 10.9033 3.37553L12.1794 7.77175C12.3036 8.19605 12.1366 8.65448 11.7692 8.90221L9.36852 10.5206C9.51661 11.2055 10.1386 12.5795 10.8658 13.7666C11.6934 14.8833 12.7355 15.9761 13.317 16.3702L15.7167 14.7525C16.0851 14.5041 16.5713 14.5209 16.9206 14.7961L20.5211 17.6248C20.8639 17.8955 20.9978 18.3574 20.8513 18.7695C20.5097 19.7302 19.7712 21.3947 18.6526 21.7588C17.5317 22.1258 16.2761 22.1896 15.0188 21.9452Z" fill="#000"/>
+                        </svg>
+                        8 (920) 481-48-83</a>
                     <button class="btn-default" data-toggle="modal" data-target="#callModal">
                         Заказать звонок
                     </button>
@@ -219,7 +240,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">>
+                <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
                     <div class="preloader"></div>
                     <p class="contact-form__message"></p>
 
@@ -256,12 +277,26 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="js/mail.php" enctype="multipart/form-data" class="form contact-form" method="POST" id="form">
-                    <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
-                    <input type="hidden" name="form_subject" value="Тема письма">
-                    <input class="contacts-input" type="text" placeholder="Имя*" name="fio" required>
-                    <textarea class="modal-reviews" name="reviews" placeholder="Отзыв*" required></textarea>
-                    <button class="btn btn-default" type="submit" name="submit" id="submit">Заказать</button>
+                <form id="form-reviews" data-js="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
+                    <div class="preloader"></div>
+                    <p class="contact-form__message">Ваша заявка отправлена!</p>
+
+                    <!-- Поле с именем -->
+                    <input name="name" type="text" class="contacts-input" placeholder="Введите ваше имя" required>
+
+                    <!-- Поле с телефоном -->
+                    <input name="phone" type="tel" class="contacts-input" placeholder="Введите ваш телефон" required>
+
+                    <!-- Поле с комментарием -->
+                    <textarea class="contacts-input modal-reviews" name="comments" placeholder="Комментарий" required></textarea>
+
+                    <!--Поле с темой в письме-->
+                    <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
+                           value="Комментарий на сайт">
+
+                    <!--Кнопка отправки формы-->
+                    <button type="submit" class="btn btn-default">Отправить</button>
+
                 </form>
             </div>
         </div>

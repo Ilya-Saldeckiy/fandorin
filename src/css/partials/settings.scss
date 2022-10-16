@@ -3,6 +3,10 @@
   background-size: cover;
 }
 
+.small, small {
+  opacity: 1!important;
+}
+
 h1{
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
