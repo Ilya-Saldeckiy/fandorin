@@ -5,7 +5,7 @@
         <div class="banner__slider">
             <div class="banner__slider-item first" style="background-image: url('img/banner/photo-1.png')">
                 <div class="slider__content">
-                    <h2 class="banner__slider-item__caption">Скидка 5% при первом заказе!</h2>
+                    <h2 class="banner__slider-item__caption">Скидка 10% при первом заказе!</h2>
                     <button class="btn btn-default banner__slider-item__btn" data-toggle="modal" data-target="#callModal">Получить!</button>
                 </div>
             </div>
@@ -21,6 +21,34 @@
             <div class="banner__slider-item five" style="background-image: url('img/banner/photo-5.png')">
             </div>
             <div class="banner__slider-item sex" style="background-image: url('img/banner/photo-6.png')">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="title">О нас</h2>
+        <div class="about__grid">
+            <div class="about__content">
+                <p class="text">
+                    <b>Банкетный зал «ФАНДОРИНЪ»</b>
+                </p>
+                <p class="text">
+                    Идеально подойдет для проведения деловых и&nbsp;семейных, торжественных и&nbsp;корпоративных мероприятий.
+                </p>
+                <p class="text">
+                    После выбора нашего банкетного зала, предлагаем Вам посетить его, познакомиться с&nbsp;администраторами зала, которые предложат варианты расстановки банкетных столов для комфортного размещения гостей.
+                    С&nbsp;квалифицированными поварами сможете обсудить варианты меню, которое составляется согласно вашим пожеланиям.
+                </p>
+                <p class="text">
+                    Будем рады предложить высокое качество обслуживания, внимание к&nbsp;деталям, чистоту и&nbsp;вкусные блюда к&nbsp;Вашему праздничному столу!
+                </p>
+                <button class="btn btn-default" data-toggle="modal" data-target="#callModal">
+                    Позвонить
+                </button>
+            </div>
+            <div class="about__image">
+                <img src="img/logo.svg" alt="Логотип" class="image">
             </div>
         </div>
     </div>
@@ -61,34 +89,6 @@
         </div>
     </div>
 </section>
-<section class="about" id="about">
-    <div class="container">
-        <h2 class="title">О нас</h2>
-        <div class="about__grid">
-            <div class="about__content">
-                <p class="text">
-                    <b>Банкетный зал «ФАНДОРИНЪ»</b>
-                </p>
-                <p class="text">
-                    Идеально подойдет для проведения деловых и&nbsp;семейных, торжественных и&nbsp;корпоративных мероприятий.
-                </p>
-                <p class="text">
-                    После выбора нашего банкетного зала, предлагаем Вам посетить его, познакомиться с&nbsp;администраторами зала, которые предложат варианты расстановки банкетных столов для комфортного размещения гостей.
-                    С&nbsp;квалифицированными поварами сможете обсудить варианты меню, которое составляется согласно вашим пожеланиям.
-                </p>
-                <p class="text">
-                    Будем рады предложить высокое качество обслуживания, внимание к&nbsp;деталям, чистоту и&nbsp;вкусные блюда к&nbsp;Вашему праздничному столу!
-                </p>
-                <button class="btn btn-default" data-toggle="modal" data-target="#callModal">
-                    Позвонить
-                </button>
-            </div>
-            <div class="about__image">
-                <img src="img/logo.svg" alt="Логотип" class="image">
-            </div>
-        </div>
-    </div>
-</section>
 <section class="section__gallery" id="gallery">
     <div class="container">
         <h2 class="title">Фотогалерея</h2>
@@ -98,7 +98,14 @@
             <img src="img/gallery/gallery-3.jpg" alt="Фотография" data-fancybox="gallery" class="gallery__item">
             <img src="img/gallery/gallery-4.jpg" alt="Фотография" data-fancybox="gallery" class="gallery__item">
             <img src="img/gallery/gallery-5.jpg" alt="Фотография" data-fancybox="gallery" class="gallery__item">
-            <img src="img/gallery/gallery-1.jpg" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-6.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-7.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-8.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-9.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-10.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-11.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-12.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
+            <img src="img/gallery/gallery-13.png" alt="Фотография" data-fancybox="gallery" class="gallery__item">
         </div>
     </div>
 </section>
@@ -146,38 +153,27 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">
-                    <p class="contact-form__title">Закажите обратный звонок и наш консультант свяжется с вами</p>
+                <form id="form-contact" method="POST" class="contact-form" autocomplete="off" enctype="multipart/form-data">>
                     <div class="preloader"></div>
                     <p class="contact-form__message"></p>
 
                     <!-- Поле с именем -->
                     <div class="contact-form__input-wrapper contact-form__input-wrapper_name">
-                        <input name="name" type="text" class="contact-form__input contact-form__input_name"
+                        <input name="name" type="text" class="contacts-input contact-form__input contact-form__input_name"
                                placeholder="Введите ваше имя">
                     </div>
 
                     <!-- Поле с телефоном -->
                     <div class="contact-form__input-wrapper contact-form__input-wrapper_phone">
-                        <input name="phone" type="tel" class="contact-form__input contact-form__input_phone"
+                        <input name="phone" type="tel" class="contacts-input contact-form__input_phone"
                                placeholder="Введите ваш телефон">
-                    </div>
-
-                    <!-- Поле с выбором файла -->
-                    <div class="contact-form__input-wrapper">
-                        <input type="file" name="files[]" id="contact-form__input_file"
-                               class="contact-form__input contact-form__input_file" multiple>
-                        <label for="contact-form__input_file" class="contact-form__file-button">
-                            <span class="contact-form__file-text">Выберите файл</span>
-                        </label>
                     </div>
 
                     <!--Поле с темой в письме-->
                     <input name="theme" type="hidden" class="contact-form__input contact-form__input_theme"
-                           value="заявка с сайта Smartlanding.biz">
-
+                           value="заявка с сайта Фандорин.рф">
                     <!--Кнопка отправки формы-->
-                    <button type="submit" class="contact-form__button">Отправить</button>
+                    <button type="submit" class="btn btn-default">Отправить</button>
 
                 </form>
             </div>
@@ -194,12 +190,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="js/mail.php" enctype="multipart/form-data" class="form" method="POST" id="form">
+                <form action="js/mail.php" enctype="multipart/form-data" class="form contact-form" method="POST" id="form">
                     <input type="hidden" name="admin_email[]" value="melllllowtoy@yandex.ru">
                     <input type="hidden" name="form_subject" value="Тема письма">
                     <input class="contacts-input" type="text" placeholder="Имя*" name="fio" required>
                     <textarea class="modal-reviews" name="reviews" placeholder="Отзыв*" required></textarea>
-                    <div id="form_result"></div>
                     <button class="btn btn-default" type="submit" name="submit" id="submit">Заказать</button>
                 </form>
             </div>

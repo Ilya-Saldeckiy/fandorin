@@ -1,7 +1,7 @@
 .banner{
 
   &__section{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     padding-top: 150px;
   }
 
@@ -71,7 +71,7 @@
 .rating{
 
   &__section{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   &__list{
@@ -154,7 +154,7 @@
     padding: 150px 0;
     background: url('../img/collection__banner.png') no-repeat;
     background-size: cover;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   &__banner{
@@ -193,7 +193,7 @@
 .categories{
 
   &__section{
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   &__list{
@@ -336,7 +336,7 @@
   }
 
   .banner__section {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .banner__slider-item__caption {
