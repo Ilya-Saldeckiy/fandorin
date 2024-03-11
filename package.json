@@ -6,11 +6,12 @@
   "license": "ISC",
   "dependencies": {
     "@fancyapps/ui": "^4.0.27",
-    "gulp": "^4.0.2",
-    "inputmask": "^5.0.6"
+    "inputmask": "^5.0.6",
+    "lazyload": "^2.0.0-rc.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-minify-css": "^1.2.4",

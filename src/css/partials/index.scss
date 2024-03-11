@@ -327,6 +327,21 @@
     padding-top: 0;
     margin-top: 150px;
   }
+
+  .banner__slider-item__caption {
+    width: 90%;
+    max-width: 400px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+    .banner__slider-item__caption {
+      width: 90%;
+      font-size: 36px;
+      line-height: 36px;
+    }
 }
 
 @media screen and (max-width: 767px) {

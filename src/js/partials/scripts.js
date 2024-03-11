@@ -28,13 +28,30 @@ $(document).ready(function(){
     // НАЧАЛО Большой баннер на главной
 
     $('.banner__slider').slick({
-        slidesToShow: 1,
+        pauseOnHover: true,
+        slidesToShow: 2,
         slidesToScroll: 1,
         arrows: false,
         vertical: false,
         infinite: true,
         dots:true,
         autoplay:true,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
     // КОНЕЦ Большого баннера на главной

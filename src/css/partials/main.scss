@@ -258,16 +258,7 @@
   height: 600px;
   border-radius: 10px;
   position: relative;
-
-  &.second {
-    transform: scale(-1,1);
-
-    .slider__content {
-      transform: scale(-1,1);
-      left: auto;
-      right: 40px;
-    }
-  }
+  margin: 0 15px;
 }
 
 .slider__content {
@@ -860,6 +851,15 @@
       border-radius: 10px;
     }
   }
+
+  .slider__content {
+    left: 30px;
+    bottom: 60px;
+  }
+
+  .banner__slider-item {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -914,6 +914,7 @@
     &.five {
       background-image: url("../img/banner/mobile/photo-5.png") !important;
       background-size: cover;
+      background-position: left;
     }
 
     &.sex {
